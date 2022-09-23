@@ -1,18 +1,18 @@
-<?php
-session_start();
+<!-- <?php
+//session_start();
 
 
 
-if($_SERVER['REQUEST_METHOD']=='POST') {
-  $email=$_POST['email'];
-  $password=$_['pass'];
+// if($_SERVER['REQUEST_METHOD']=='POST') {
+//   $email=$_POST['email'];
+//   $password=$_['pass'];
 
-  $database_email = 'karkikusal16@gmail.com';
-  $database_password = '12345karki';
+//   $database_email = 'karkikusal16@gmail.com';
+//   $database_password = '12345karki';
 
-  }
+//   }
 
-?>
+?> -->
 
 
 
@@ -41,7 +41,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
       <label  class="form-label">Password:</label>
       <input type="text" name="pass" class="form-control" >
     </div>
-      </select>
+   
     
 
       

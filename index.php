@@ -1,14 +1,11 @@
 <?php
-session_start();
+//session_start();
 
-$isLoggedIN = isset($_SESSION['auth']);
-if($isLoggedIN){
-    echo "login vayo";
-
-}else{
-    echo "login xaina";
+//$isLoggedIN = isset($_SESSION['auth']);
+//if($isLoggedIN)
+if(!isset($_COOKIE['auth'])){
+    header('location: login.php');
 }
-
 
 ?>
 

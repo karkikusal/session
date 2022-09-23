@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 $em="karkikusal16@gmail.com";
 $pass="12345karki";
 $email=$_POST['email'];
@@ -8,12 +8,15 @@ $password=$_POST['pass'];
     {
         if($em == $email && $password == $pass)
         {
-            $_SESSION['auth']=true;
-            header('location: index.php');
+            //$_SESSION['auth']=true;
+            setcookie('auth',$em,time()+5,"/");
+            
+        
+            header('location: ./index.php');
 
         }
         else{
-            header('location: login.php');
+            header('location: ./login.php');
         }
     }
 
